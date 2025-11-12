@@ -4,12 +4,12 @@
 
 @font-face {
   font-family: 'Euphorigenic';
-  src: url('/assets/fonts/Euphorigenic.otf') format('opentype');
+  src: url('../fonts/Euphorigenic.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Nunito Sans';
-  src: url('/assets/fonts/NunitoSans.ttf') format('truetype');
+  src: url('../fonts/NunitoSans.ttf') format('truetype');
 
   font-weight: 200 900;
   font-style: normal;
@@ -17,7 +17,7 @@
 
 @font-face {
   font-family: 'Nunito Sans';
-  src: url('/assets/fonts/NunitoSans-Italic.ttf') format('truetype');
+  src: url('../fonts/NunitoSans-Italic.ttf') format('truetype');
 
   font-weight: 200 900;
   font-style: italic;
