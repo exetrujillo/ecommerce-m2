@@ -69,7 +69,65 @@
   </header>
 
   <main>
+    <!-- Breadcrumb -->
+    <section id="seccion-breadcrumb" class="container my-3">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../../index.html">Inicio</a></li>
+          <li class="breadcrumb-item"><a href="../ropa.html">Ropa</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Polerón Empate</li>
+        </ol>
+      </nav>
+    </section>
+
+    <!-- Grid para la foto del producto, la descripción y la parte de la compra -->
+    <section id="seccion-detalle-producto" class="container p-5">
+      <div class="row">
+        <!-- Foto del producto -->
+        <div class="col-md-4">
+          <img src="../../assets/img/poleron.png" alt="Polerón diseño Empate" class="img-fluid">
+        </div>
+
+        <!-- Descripción del producto -->
+        <div class="col-md-6 px-5">
+          <h2>Polerón - Empate</h2>
+          <p>Si te tratan de la canina pero eres de quienes ladran con furia de vuelta (y comes corazones y esas cosas) ya sabes... Este es para ti ;)</p>
+          <ul>
+            <li>Material principal: Algodón Natural"</li>
+            <li>Estampado: Vinilo</li>
+            <li>Aguanta unos 100 lavados</li>
+            <li>Medidas: Disponible en tallas S, M, L y XL.</li>
+          </ul>
+        </div>
+
+        <!-- Parte de la compra -->
+        <div class="col-md-2 pe-5">
+          <h3>Comprar</h3>
+          <p class="fs-4 fw-bold">$17.500 CLP</p>
+          <!-- Formulario con cantidad y elección de talla -->
+          <form>
+            <div class="mb-3">
+              <label for="cantidad" class="form-label">Cantidad:</label>
+              <input type="number" id="cantidad" name="cantidad" class="form-control" value="1" min="1">
+            </div>
+            <div class="mb-3">
+              <label for="talla" class="form-label">Talla:</label>
+              <select id="talla" name="talla" class="form-select">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Agregar al Carrito</button>
+          </form>
+        </div>
+    </section>
   </main>
+
+  <footer>
+    <!-- Agregar footer -->
+  </footer>
 
 </body>
 </html>

@@ -69,7 +69,65 @@
   </header>
 
   <main>
+    <!-- Breadcrumb -->
+    <section id="seccion-breadcrumb" class="container my-3">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../../index.html">Inicio</a></li>
+          <li class="breadcrumb-item"><a href="../musica.html">Música</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Cassette Demos</li>
+        </ol>
+      </nav>
+    </section>
+
+    <!-- Grid para la foto del producto, la descripción y la parte de la compra -->
+    <section id="seccion-detalle-producto" class="container p-5">
+      <div class="row">
+        <!-- Foto del producto -->
+        <div class="col-md-4">
+          <img src="../../assets/img/cassette.png" alt="Cassette Demos Violentistas de Siempre" class="img-fluid">
+        </div>
+
+        <!-- Descripción del producto -->
+        <div class="col-md-6 px-5">
+          <h2>Cassete - Demos</h2>
+          <p>Dinos que hay algo más indie que piratear tus propios cassettes...
+            <br>Y no te creeremos!</p>
+          <ul>
+            <li>Formato: Cassette</li>
+            <li>Duración: 20 minutos</li>
+            <li>Incluye libreto con letras y fotos exclusivas</li>
+          </ul>
+
+          <strong>Tracklist:</strong>
+          <ol>
+            <li>Instrucciones (demo)</li>
+            <li>Todo es tan hermoso (demo)</li>
+            <li>Aminoácido (demo)</li>
+            <li>IOF (demo)</li>
+            <li>Te Recuerdo (demo)</li>
+            <li>Duelo (demo)</li>
+          </ol>
+        </div>
+
+        <!-- Parte de la compra -->
+        <div class="col-md-2 pe-5">
+          <h3>Comprar</h3>
+          <p class="fs-4 fw-bold">$8.000 CLP</p>
+          <form>
+            <div class="mb-3">
+              <label for="cantidad" class="form-label">Cantidad:</label>
+              <input type="number" id="cantidad" name="cantidad" class="form-control" value="1" min="1">
+            </div>
+            <button type="submit" class="btn btn-primary">Agregar al Carrito</button>
+          </form>
+        </div>
+    </section>
   </main>
+
+  <footer>
+    <!-- Agregar footer -->
+  </footer>
 
 </body>
 </html>

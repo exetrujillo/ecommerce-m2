@@ -69,7 +69,55 @@
   </header>
 
   <main>
+    <!-- Breadcrumb -->
+    <section id="seccion-breadcrumb" class="container my-3">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../../index.html">Inicio</a></li>
+          <li class="breadcrumb-item"><a href="../ropa.html">Ropa</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Totebag Pero No</li>
+        </ol>
+      </nav>
+    </section>
+
+    <!-- Grid para la foto del producto, la descripción y la parte de la compra -->
+    <section id="seccion-detalle-producto" class="container p-5">
+      <div class="row">
+        <!-- Foto del producto -->
+        <div class="col-md-4">
+          <img src="../../assets/img/totebag.png" alt="Totebag Pero No" class="img-fluid">
+        </div>
+
+        <!-- Descripción del producto -->
+        <div class="col-md-6 px-5">
+          <h2>Totebag - Pero No</h2>
+          <p>Si tienes linda tu casa, y además un perro nuevo, y en las mañanas subes los cerros, date el lujo de pasear con esta tote por Ñuñoa 😎</p>
+          <ul>
+            <li>Material principal: Algodón Natural"</li>
+            <li>Estampado: Vinilo</li>
+            <li>Aguanta unos 100 lavados</li>
+            <li>Medidas: 42 x 38 cm.</li>
+          </ul>
+        </div>
+
+        <!-- Parte de la compra -->
+        <div class="col-md-2 pe-5">
+          <h3>Comprar</h3>
+          <p class="fs-4 fw-bold">$8.500 CLP</p>
+          <form>
+            <div class="mb-3">
+              <label for="cantidad" class="form-label">Cantidad:</label>
+              <input type="number" id="cantidad" name="cantidad" class="form-control" value="1" min="1">
+            </div>
+            <button type="submit" class="btn btn-primary">Agregar al Carrito</button>
+          </form>
+        </div>
+    </section>
   </main>
+
+  <footer>
+    <!-- Agregar footer -->
+  </footer>
 
 </body>
 </html>
