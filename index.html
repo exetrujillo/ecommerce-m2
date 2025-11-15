@@ -14,58 +14,14 @@
   <script defer src="assets/vendors/bootstrap/bootstrap.bundle.min.js"></script>
   <!-- jQuery-->
   <script defer src="assets/vendors/jquery/jquery-3.7.1.min.js"></script>
+  <!-- JS personalizados -->
+  <script defer src="assets/js/layout.js"></script>
+  <script defer type="module" src="assets/js/index.js"></script>
 </head>
 <body>
   <!-- Header con NavBar -->
   <header class="bg-dark text-white p-2">
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-      <div class="container">
-        <a class="navbar-brand me-5 fs-1" href="index.html">VDS</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-
-          <!-- Links de navegación -->
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="pages/musica.html">Música</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pages/letras.html">Letras</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pages/ropa.html">Ropa</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pages/collages.html">Collages</a>
-            </li>
-          </ul>
-          <!-- Fin navlinks -->
-
-          <!-- Carrito -->
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item dropdown ms-auto">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart4 pb-1" viewBox="0 0 16 16">
-                  <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
-                </svg>
-                Carrito
-              </a>
-              <ul class="dropdown-menu text-white bg-dark p-3">
-                <!-- Aquí después debería poder mostrar qué es lo que hay en el carrito -->
-                <li>Coming sun <br> (tipo blackhole sun viste)</li>
-              </ul>
-            </li>
-          </ul>
-          <!-- Fin Carrito -->
-
-        </div>
-      </div>
-    </nav>
+    <div id="navbar"></div>
   </header>
   
   <main>
@@ -99,79 +55,25 @@
         <h2 class="text-center py-5">Productos Destacados</h2>
         
         <!-- Tarjetas -->
-        <div class="row  pb-5 row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="tarjetas-productos-destacados">
-          <!-- Vinilo -->
+        <div class="row pb-5 row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="tarjetas-productos-destacados">
           <div class="col">
             <div class="card h-100">
-              <img src="assets/img/vinilo.png" class="card-img-top" alt="Vinilo disco Mal Menor">
-              <div class="card-body">
-                <h5 class="card-title">Vinilo "malmenor"</h5>
-                <p class="card-text">Advertencia: <br>
-                  Llévalo sólo si tienes un tocadiscos a prueba de fuego 🥵</p>
-                <a href="pages/productos/vinilo.html" class="btn btn-danger">Ver más »</a>
-              </div>
-            </div>
-          </div>
-          <!-- Cassette -->
-          <div class="col">
-            <div class="card h-100">
-              <img src="assets/img/cassette.png" class="card-img-top" alt="Cassette Violentistas de Siempre">
-              <div class="card-body">
-                <h5 class="card-title">Cassette Demos</h5>
-                <p class="card-text">Dinos que hay algo más indie que piratear tus propios cassettes... <br>Y no te creeremos! </p>
-                <a href="pages/productos/cassette.html" class="btn btn-danger">Ver más »</a>
-              </div>
-            </div>
-          </div>
-          <!-- Totebag -->
-          <div class="col">
-            <div class="card h-100">
-              <img src="assets/img/totebag.png" class="card-img-top" alt="Totebag Violentistas de Siempre">
-              <div class="card-body">
-                <h5 class="card-title">Totebag "Pero No"</h5>
-                <p class="card-text">Si tienes linda tu casa, y además un perro nuevo, y en las mañanas subes los cerros, date el lujo de pasear con esta tote por Ñuñoa 😎</p>
-                <a href="pages/productos/totebag.html" class="btn btn-danger">Ver más »</a>
-              </div>
-            </div>
-          </div>
-          <!-- Polera -->
-          <div class="col">
-            <div class="card h-100">
-              <img src="assets/img/polera.png" class="card-img-top" alt="Polera blanca Violentistas de Siempre">
-              <div class="card-body">
-                <h5 class="card-title">Polera "Espera"</h5>
-                <p class="card-text">¿Cansado de esperar por esa <strike>mierda</strike>? No esperes más y llévate esta pilcha. No tienes por qué explicar cada decisión 🤪</p>
-                <a href="pages/productos/polera.html" class="btn btn-danger">Ver más »</a>
-              </div>
-            </div>
-          </div>
-          <!-- Polerón -->
-          <div class="col">
-            <div class="card h-100">
-              <img src="assets/img/poleron.png" class="card-img-top" alt="Polerón negro Violentistas de Siempre">
-              <div class="card-body">
-                <h5 class="card-title">Polerón Empate</h5>
-                <p class="card-text">Si te tratan de la canina pero eres de quienes ladran con furia de vuelta (y comes corazones y esas cosas) ya sabes... Este es pa ti ;)</p>
-                <a href="pages/productos/poleron.html" class="btn btn-danger">Ver más »</a>
-              </div>
-            </div>
-          </div>
-          <!-- Print Collage -->
-          <div class="col">
-            <div class="card h-100">
-              <img src="assets/img/enmarcado.png" class="card-img-top" alt="Print Collage Ale Decap">
-              <div class="card-body">
-                <h5 class="card-title">Print Collages Decapssss</h5>
-                <p class="card-text">¿Es que necesitan más presentación? Son una locura, sabemos que lo quieres tener en tu casa... o en la oficina... o debajo de tu almohada...</p>
-                <a href="pages/productos/enmarcado.html" class="btn btn-danger">Ver más »</a>
+              <div class="card-body d-flex align-items-center justify-content-center">
+                <div class="spinner-border text-danger" role="status">
+                  <span class="visually-hidden">Cargando productos...</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <!-- Fin Tarjetas -->
+
+      </div>
     </section>
-    <!-- Fin Sección Productos Destacados -->
+  
   </main>
+
+  <div id="footer"></div>
 
 </body>
 </html>
